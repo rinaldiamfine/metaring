@@ -15,7 +15,7 @@ struct DashboardView: View {
                     // HEADER CONTENT
                     HStack {
                         DashboardHeaderView()
-                    }
+                    }.padding()
                     
                     // BUTTON CONTENT
                     HStack {
@@ -57,8 +57,14 @@ struct DashboardView: View {
                                 )
                             }
                         }
-                    }
-                }.padding()
+                    }.padding()
+                    
+                    // BUTTON CONTENT
+                    HStack {
+                        DashboardChartView()
+                            .frame(height: 370)
+                    }.padding(5)
+                }
             }
             )
 //        }

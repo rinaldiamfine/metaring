@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA191D5228390786006AA2CF /* DashboardChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191D5128390786006AA2CF /* DashboardChartView.swift */; };
+		FABAA675283904F600A36936 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = FABAA674283904F600A36936 /* Charts */; };
 		FADA7F112838C39500916152 /* metaringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F102838C39500916152 /* metaringApp.swift */; };
 		FADA7F132838C39500916152 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F122838C39500916152 /* ContentView.swift */; };
 		FADA7F152838C39A00916152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA7F142838C39A00916152 /* Assets.xcassets */; };
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA191D5128390786006AA2CF /* DashboardChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardChartView.swift; sourceTree = "<group>"; };
 		FADA7F0D2838C39500916152 /* metaring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metaring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA7F102838C39500916152 /* metaringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metaringApp.swift; sourceTree = "<group>"; };
 		FADA7F122838C39500916152 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABAA675283904F600A36936 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +155,7 @@
 				FADA7F7B2838D81400916152 /* DashboardView.swift */,
 				FADA7F7D2838D88500916152 /* DashboardButtonView.swift */,
 				FADA7F822838EFB700916152 /* DashboardHeaderView.swift */,
+				FA191D5128390786006AA2CF /* DashboardChartView.swift */,
 				FADA7F922838FD9D00916152 /* MultiLineChartView.swift */,
 			);
 			path = Views;
@@ -181,6 +186,7 @@
 			);
 			name = metaring;
 			packageProductDependencies = (
+				FABAA674283904F600A36936 /* Charts */,
 			);
 			productName = metaring;
 			productReference = FADA7F0D2838C39500916152 /* metaring.app */;
@@ -258,6 +264,7 @@
 			);
 			mainGroup = FADA7F042838C39500916152;
 			packageReferences = (
+				FABAA673283904F600A36936 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = FADA7F0E2838C39500916152 /* Products */;
 			projectDirPath = "";
@@ -367,6 +374,7 @@
 			files = (
 				FADA7F832838EFB700916152 /* DashboardHeaderView.swift in Sources */,
 				FADA7F1D2838C39A00916152 /* metaring.xcdatamodeld in Sources */,
+				FA191D5228390786006AA2CF /* DashboardChartView.swift in Sources */,
 				FADA7F932838FD9D00916152 /* MultiLineChartView.swift in Sources */,
 				FADA7F1A2838C39A00916152 /* Persistence.swift in Sources */,
 				FADA7F812838D9D000916152 /* AssetHelpers.swift in Sources */,
@@ -698,6 +706,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FABAA673283904F600A36936 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FABAA674283904F600A36936 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABAA673283904F600A36936 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FADA7F1B2838C39A00916152 /* metaring.xcdatamodeld */ = {
