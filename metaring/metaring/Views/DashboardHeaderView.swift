@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Charts
+//import Charts
 
 struct DashboardHeaderView: View {
     func setupDateNow() -> String {
