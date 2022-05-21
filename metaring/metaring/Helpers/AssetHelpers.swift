@@ -11,6 +11,8 @@ import SwiftUI
 struct MetaringAssets {
     static var subtitleDashboard = Color("SubtitleDashboard")
     static var borderDashboard = Color("BorderDashboard")
+    static var mainBackgroundColor = Color("MainBackgroundColor")
+    static var groupBackgroundColor = Color("GroupBackgroundColor")
     
     static var metalContent = Color("MetalContent")
     static var metalContentBackground = Color("MetalContentBackground")

@@ -11,15 +11,18 @@ struct DashboardView: View {
     var body: some View {
 //        NavigationView {
             GeometryReader(content: { geometry in
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 0) {
                     // HEADER CONTENT
                     HStack {
                         DashboardHeaderView()
-                    }.padding()
+                        Spacer()
+                    }
+                    .padding()
+                    .background(MetaringAssets.groupBackgroundColor)
                     
                     // BUTTON CONTENT
                     HStack {
-                        VStack(spacing: 10) {
+                        VStack {
                             HStack {
                                 DashboardButtonView(
                                     value: "0.5",
@@ -57,14 +60,23 @@ struct DashboardView: View {
                                 )
                             }
                         }
-                    }.padding()
+                    }
+                    .padding()
+                    .background(MetaringAssets.groupBackgroundColor)
                     
+                    HStack {
+                    }
+                    .frame(width: geometry.self.size.width, height: 10)
+                    .background(Color.clear)
                     // BUTTON CONTENT
                     HStack {
                         DashboardChartView()
                             .frame(height: 370)
-                    }.padding(5)
-                }
+                    }
+                    .padding(5)
+                    .background(MetaringAssets.groupBackgroundColor)
+                    
+                }.background(MetaringAssets.mainBackgroundColor)
             }
             )
 //        }
