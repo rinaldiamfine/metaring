@@ -13,7 +13,8 @@ struct metaringApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardView()
+//            ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

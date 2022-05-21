@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13621A1CC0272C6AC117A8FC /* Pods_metaring_metaringUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2372BE70260E04E8E7F6D913 /* Pods_metaring_metaringUITests.framework */; };
+		CCFD0D9FF227C192393618AA /* Pods_metaringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7D6A8CDBE8D9EDE1F34885 /* Pods_metaringTests.framework */; };
 		FADA7F112838C39500916152 /* metaringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F102838C39500916152 /* metaringApp.swift */; };
 		FADA7F132838C39500916152 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F122838C39500916152 /* ContentView.swift */; };
 		FADA7F152838C39A00916152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA7F142838C39A00916152 /* Assets.xcassets */; };
@@ -16,6 +18,13 @@
 		FADA7F272838C39A00916152 /* metaringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F262838C39A00916152 /* metaringTests.swift */; };
 		FADA7F312838C39A00916152 /* metaringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F302838C39A00916152 /* metaringUITests.swift */; };
 		FADA7F332838C39A00916152 /* metaringUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F322838C39A00916152 /* metaringUITestsLaunchTests.swift */; };
+		FADA7F7C2838D81400916152 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F7B2838D81400916152 /* DashboardView.swift */; };
+		FADA7F7E2838D88500916152 /* DashboardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F7D2838D88500916152 /* DashboardButtonView.swift */; };
+		FADA7F812838D9D000916152 /* AssetHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F802838D9D000916152 /* AssetHelpers.swift */; };
+		FADA7F832838EFB700916152 /* DashboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F822838EFB700916152 /* DashboardHeaderView.swift */; };
+		FADA7F932838FD9D00916152 /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F922838FD9D00916152 /* MultiLineChartView.swift */; };
+		FADA7F96283900D900916152 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = FADA7F95283900D900916152 /* Charts */; };
+		FADA7F972839019300916152 /* Pods_metaring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3420C76F35E2AD6FD2F493E7 /* Pods_metaring.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CB559B06800D7432EB6B588 /* Pods-metaring-metaringUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-metaring-metaringUITests.release.xcconfig"; path = "Target Support Files/Pods-metaring-metaringUITests/Pods-metaring-metaringUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2372BE70260E04E8E7F6D913 /* Pods_metaring_metaringUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_metaring_metaringUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3420C76F35E2AD6FD2F493E7 /* Pods_metaring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_metaring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		543761AFDEC482D589C3F0C0 /* Pods-metaringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-metaringTests.debug.xcconfig"; path = "Target Support Files/Pods-metaringTests/Pods-metaringTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D7D6A8CDBE8D9EDE1F34885 /* Pods_metaringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_metaringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C00B5E6C8E16414BFB15E47 /* Pods-metaring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-metaring.debug.xcconfig"; path = "Target Support Files/Pods-metaring/Pods-metaring.debug.xcconfig"; sourceTree = "<group>"; };
+		6CB5E203D1D56882DA363F13 /* Pods-metaring-metaringUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-metaring-metaringUITests.debug.xcconfig"; path = "Target Support Files/Pods-metaring-metaringUITests/Pods-metaring-metaringUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3322C2992B8F0FE60AA912D /* Pods-metaring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-metaring.release.xcconfig"; path = "Target Support Files/Pods-metaring/Pods-metaring.release.xcconfig"; sourceTree = "<group>"; };
+		E3686135F6EFF70DAB03BE70 /* Pods-metaringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-metaringTests.release.xcconfig"; path = "Target Support Files/Pods-metaringTests/Pods-metaringTests.release.xcconfig"; sourceTree = "<group>"; };
 		FADA7F0D2838C39500916152 /* metaring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metaring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA7F102838C39500916152 /* metaringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metaringApp.swift; sourceTree = "<group>"; };
 		FADA7F122838C39500916152 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +66,11 @@
 		FADA7F2C2838C39A00916152 /* metaringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metaringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA7F302838C39A00916152 /* metaringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metaringUITests.swift; sourceTree = "<group>"; };
 		FADA7F322838C39A00916152 /* metaringUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metaringUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FADA7F7B2838D81400916152 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FADA7F7D2838D88500916152 /* DashboardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardButtonView.swift; sourceTree = "<group>"; };
+		FADA7F802838D9D000916152 /* AssetHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetHelpers.swift; sourceTree = "<group>"; };
+		FADA7F822838EFB700916152 /* DashboardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardHeaderView.swift; sourceTree = "<group>"; };
+		FADA7F922838FD9D00916152 /* MultiLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADA7F96283900D900916152 /* Charts in Frameworks */,
+				FADA7F972839019300916152 /* Pods_metaring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFD0D9FF227C192393618AA /* Pods_metaringTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +95,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13621A1CC0272C6AC117A8FC /* Pods_metaring_metaringUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02E90E39869DF8F767438EE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C00B5E6C8E16414BFB15E47 /* Pods-metaring.debug.xcconfig */,
+				C3322C2992B8F0FE60AA912D /* Pods-metaring.release.xcconfig */,
+				6CB5E203D1D56882DA363F13 /* Pods-metaring-metaringUITests.debug.xcconfig */,
+				0CB559B06800D7432EB6B588 /* Pods-metaring-metaringUITests.release.xcconfig */,
+				543761AFDEC482D589C3F0C0 /* Pods-metaringTests.debug.xcconfig */,
+				E3686135F6EFF70DAB03BE70 /* Pods-metaringTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E280F353E403F1FFFB08181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3420C76F35E2AD6FD2F493E7 /* Pods_metaring.framework */,
+				2372BE70260E04E8E7F6D913 /* Pods_metaring_metaringUITests.framework */,
+				5D7D6A8CDBE8D9EDE1F34885 /* Pods_metaringTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FADA7F042838C39500916152 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +132,8 @@
 				FADA7F252838C39A00916152 /* metaringTests */,
 				FADA7F2F2838C39A00916152 /* metaringUITests */,
 				FADA7F0E2838C39500916152 /* Products */,
+				02E90E39869DF8F767438EE0 /* Pods */,
+				4E280F353E403F1FFFB08181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +150,9 @@
 		FADA7F0F2838C39500916152 /* metaring */ = {
 			isa = PBXGroup;
 			children = (
+				FADA7F912838FD3600916152 /* Charts */,
+				FADA7F7F2838D9BC00916152 /* Helpers */,
+				FADA7F7A2838D7F500916152 /* Views */,
 				FADA7F102838C39500916152 /* metaringApp.swift */,
 				FADA7F122838C39500916152 /* ContentView.swift */,
 				FADA7F142838C39A00916152 /* Assets.xcassets */,
@@ -133,6 +188,32 @@
 			path = metaringUITests;
 			sourceTree = "<group>";
 		};
+		FADA7F7A2838D7F500916152 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FADA7F7B2838D81400916152 /* DashboardView.swift */,
+				FADA7F7D2838D88500916152 /* DashboardButtonView.swift */,
+				FADA7F822838EFB700916152 /* DashboardHeaderView.swift */,
+				FADA7F922838FD9D00916152 /* MultiLineChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FADA7F7F2838D9BC00916152 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FADA7F802838D9D000916152 /* AssetHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FADA7F912838FD3600916152 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,15 +221,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADA7F362838C39A00916152 /* Build configuration list for PBXNativeTarget "metaring" */;
 			buildPhases = (
+				F836CCC3BC85585CBB109C68 /* [CP] Check Pods Manifest.lock */,
 				FADA7F092838C39500916152 /* Sources */,
 				FADA7F0A2838C39500916152 /* Frameworks */,
 				FADA7F0B2838C39500916152 /* Resources */,
+				78F1D359D56F4F4D5236512F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = metaring;
+			packageProductDependencies = (
+				FADA7F95283900D900916152 /* Charts */,
+			);
 			productName = metaring;
 			productReference = FADA7F0D2838C39500916152 /* metaring.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADA7F392838C39A00916152 /* Build configuration list for PBXNativeTarget "metaringTests" */;
 			buildPhases = (
+				06DBCC245DEA4ED15C1F50CE /* [CP] Check Pods Manifest.lock */,
 				FADA7F1E2838C39A00916152 /* Sources */,
 				FADA7F1F2838C39A00916152 /* Frameworks */,
 				FADA7F202838C39A00916152 /* Resources */,
@@ -175,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADA7F3C2838C39A00916152 /* Build configuration list for PBXNativeTarget "metaringUITests" */;
 			buildPhases = (
+				A3FAA4A45028A88B0CF9A433 /* [CP] Check Pods Manifest.lock */,
 				FADA7F282838C39A00916152 /* Sources */,
 				FADA7F292838C39A00916152 /* Frameworks */,
 				FADA7F2A2838C39A00916152 /* Resources */,
+				C4706F0AA2CEBC605AF29EC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +310,9 @@
 				Base,
 			);
 			mainGroup = FADA7F042838C39500916152;
+			packageReferences = (
+				FADA7F94283900D900916152 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = FADA7F0E2838C39500916152 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,13 +350,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06DBCC245DEA4ED15C1F50CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-metaringTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78F1D359D56F4F4D5236512F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-metaring/Pods-metaring-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-metaring/Pods-metaring-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-metaring/Pods-metaring-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3FAA4A45028A88B0CF9A433 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-metaring-metaringUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4706F0AA2CEBC605AF29EC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-metaring-metaringUITests/Pods-metaring-metaringUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-metaring-metaringUITests/Pods-metaring-metaringUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-metaring-metaringUITests/Pods-metaring-metaringUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F836CCC3BC85585CBB109C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-metaring-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FADA7F092838C39500916152 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADA7F832838EFB700916152 /* DashboardHeaderView.swift in Sources */,
 				FADA7F1D2838C39A00916152 /* metaring.xcdatamodeld in Sources */,
+				FADA7F932838FD9D00916152 /* MultiLineChartView.swift in Sources */,
 				FADA7F1A2838C39A00916152 /* Persistence.swift in Sources */,
+				FADA7F812838D9D000916152 /* AssetHelpers.swift in Sources */,
+				FADA7F7C2838D81400916152 /* DashboardView.swift in Sources */,
+				FADA7F7E2838D88500916152 /* DashboardButtonView.swift in Sources */,
 				FADA7F132838C39500916152 /* ContentView.swift in Sources */,
 				FADA7F112838C39500916152 /* metaringApp.swift in Sources */,
 			);
@@ -419,6 +619,7 @@
 		};
 		FADA7F372838C39A00916152 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C00B5E6C8E16414BFB15E47 /* Pods-metaring.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,12 +643,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FADA7F382838C39A00916152 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3322C2992B8F0FE60AA912D /* Pods-metaring.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,12 +673,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		FADA7F3A2838C39A00916152 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543761AFDEC482D589C3F0C0 /* Pods-metaringTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +700,7 @@
 		};
 		FADA7F3B2838C39A00916152 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3686135F6EFF70DAB03BE70 /* Pods-metaringTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +721,7 @@
 		};
 		FADA7F3D2838C39A00916152 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB5E203D1D56882DA363F13 /* Pods-metaring-metaringUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +740,7 @@
 		};
 		FADA7F3E2838C39A00916152 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB559B06800D7432EB6B588 /* Pods-metaring-metaringUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +797,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FADA7F94283900D900916152 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FADA7F95283900D900916152 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FADA7F94283900D900916152 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FADA7F1B2838C39A00916152 /* metaring.xcdatamodeld */ = {
