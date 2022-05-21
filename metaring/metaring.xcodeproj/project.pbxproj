@@ -21,7 +21,6 @@
 		FADA7F812838D9D000916152 /* AssetHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F802838D9D000916152 /* AssetHelpers.swift */; };
 		FADA7F832838EFB700916152 /* DashboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F822838EFB700916152 /* DashboardHeaderView.swift */; };
 		FADA7F932838FD9D00916152 /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F922838FD9D00916152 /* MultiLineChartView.swift */; };
-		FADA7F96283900D900916152 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = FADA7F95283900D900916152 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADA7F96283900D900916152 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +183,6 @@
 			);
 			name = metaring;
 			packageProductDependencies = (
-				FADA7F95283900D900916152 /* Charts */,
 			);
 			productName = metaring;
 			productReference = FADA7F0D2838C39500916152 /* metaring.app */;
@@ -263,7 +260,6 @@
 			);
 			mainGroup = FADA7F042838C39500916152;
 			packageReferences = (
-				FADA7F94283900D900916152 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = FADA7F0E2838C39500916152 /* Products */;
 			projectDirPath = "";
@@ -743,25 +739,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FADA7F94283900D900916152 /* XCRemoteSwiftPackageReference "Charts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielgindi/Charts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FADA7F95283900D900916152 /* Charts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FADA7F94283900D900916152 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = Charts;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FADA7F1B2838C39A00916152 /* metaring.xcdatamodeld */ = {
