@@ -30,3 +30,8 @@ struct MetaringAssets {
     static var WaterTurbidityBackground = Color("WaterTurbidityBackground")
     static var waterTurbidityIcon = Image("WaterTurbidityIcon")
 }
+
+struct MetaringGraphType {
+    static var weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    static var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+}
