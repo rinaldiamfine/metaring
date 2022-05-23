@@ -9,13 +9,23 @@ import SwiftUI
 
 @main
 struct metaringApp: App {
-    let persistenceController = PersistenceController.shared
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some Scene {
         WindowGroup {
-            DashboardView()
-//            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TabBarView()
+        }
+        .onChange(of: scenePhase) { phase in
+            switch phase {
+                case .active:
+                    print("active")
+                case .inactive:
+                    print("inactive")
+                case .background:
+                    print("background")
+                @unknown default:
+                    print("unknown")
+            }
         }
     }
 }

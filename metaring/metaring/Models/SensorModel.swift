@@ -8,6 +8,10 @@
 import Foundation
 import CoreData
 
+enum SensorType: String {
+    case metal_content, water_ph, water_turbidity, water_debit
+}
+
 struct SensorModel {
     let sensor: Sensor
     var url: String {
@@ -17,6 +21,10 @@ struct SensorModel {
         return sensor.requestId ?? ""
     }
     var sensorType: String {
+        //metal_content
+        //water_ph
+        //water_turbidity
+        //water_debit
         return sensor.sensorType ?? ""
     }
     var unit: String {

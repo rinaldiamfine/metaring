@@ -8,21 +8,13 @@
 import SwiftUI
 
 struct DashboardHeaderView: View {
-    func setupDateNow() -> String {
-        var stringDate = ""
-        let dateNow = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EE, dd MMM y"
-        stringDate = dateFormatter.string(from: dateNow)
-        return stringDate
-    }
-    
+    @State var date = ""
     var body: some View {
         VStack(alignment: .leading) {
             Text("Hi, There")
                 .font(.largeTitle)
                 .fontWeight(.medium)
-            Text(setupDateNow())
+            Text(date)
                 .font(.subheadline)
                 .foregroundColor(MetaringAssets.subtitleDashboard)
         }

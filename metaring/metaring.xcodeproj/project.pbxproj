@@ -25,6 +25,11 @@
 		FADA7F932838FD9D00916152 /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F922838FD9D00916152 /* MultiLineChartView.swift */; };
 		FAFE5760283A3872004F151D /* SensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE575F283A3872004F151D /* SensorModel.swift */; };
 		FAFE5762283A49B6004F151D /* ModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE5761283A49B6004F151D /* ModelHelper.swift */; };
+		FAFE5764283A4C90004F151D /* SensorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE5763283A4C90004F151D /* SensorHelper.swift */; };
+		FAFE5767283A54ED004F151D /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE5766283A54ED004F151D /* DashboardViewModel.swift */; };
+		FAFE5769283A5799004F151D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE5768283A5799004F151D /* TabBarView.swift */; };
+		FAFE576B283A57FC004F151D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE576A283A57FC004F151D /* HistoryView.swift */; };
+		FAFE576D283A6B8A004F151D /* SensorRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE576C283A6B8A004F151D /* SensorRequestHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		FADA7F922838FD9D00916152 /* MultiLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineChartView.swift; sourceTree = "<group>"; };
 		FAFE575F283A3872004F151D /* SensorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorModel.swift; sourceTree = "<group>"; };
 		FAFE5761283A49B6004F151D /* ModelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHelper.swift; sourceTree = "<group>"; };
+		FAFE5763283A4C90004F151D /* SensorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorHelper.swift; sourceTree = "<group>"; };
+		FAFE5766283A54ED004F151D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		FAFE5768283A5799004F151D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		FAFE576A283A57FC004F151D /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		FAFE576C283A6B8A004F151D /* SensorRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorRequestHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,7 @@
 		FADA7F0F2838C39500916152 /* metaring */ = {
 			isa = PBXGroup;
 			children = (
+				FAFE5765283A54DA004F151D /* ViewModels */,
 				FAFE575E283A37AE004F151D /* Models */,
 				FADA7F7F2838D9BC00916152 /* Helpers */,
 				FADA7F7A2838D7F500916152 /* Views */,
@@ -162,6 +173,8 @@
 				FADA7F822838EFB700916152 /* DashboardHeaderView.swift */,
 				FA191D5128390786006AA2CF /* DashboardChartView.swift */,
 				FADA7F922838FD9D00916152 /* MultiLineChartView.swift */,
+				FAFE5768283A5799004F151D /* TabBarView.swift */,
+				FAFE576A283A57FC004F151D /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +184,8 @@
 			children = (
 				FADA7F802838D9D000916152 /* AssetHelper.swift */,
 				FAFE5761283A49B6004F151D /* ModelHelper.swift */,
+				FAFE5763283A4C90004F151D /* SensorHelper.swift */,
+				FAFE576C283A6B8A004F151D /* SensorRequestHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -181,6 +196,14 @@
 				FAFE575F283A3872004F151D /* SensorModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FAFE5765283A54DA004F151D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE5766283A54ED004F151D /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,15 +412,20 @@
 				FADA7F832838EFB700916152 /* DashboardHeaderView.swift in Sources */,
 				FADA7F1D2838C39A00916152 /* metaring.xcdatamodeld in Sources */,
 				FA191D5228390786006AA2CF /* DashboardChartView.swift in Sources */,
+				FAFE576D283A6B8A004F151D /* SensorRequestHelper.swift in Sources */,
 				FADA7F932838FD9D00916152 /* MultiLineChartView.swift in Sources */,
 				FADA7F1A2838C39A00916152 /* Persistence.swift in Sources */,
 				FADA7F812838D9D000916152 /* AssetHelper.swift in Sources */,
 				FADA7F7C2838D81400916152 /* DashboardView.swift in Sources */,
 				FADA7F7E2838D88500916152 /* DashboardButtonView.swift in Sources */,
 				FADA7F132838C39500916152 /* ContentView.swift in Sources */,
+				FAFE576B283A57FC004F151D /* HistoryView.swift in Sources */,
+				FAFE5764283A4C90004F151D /* SensorHelper.swift in Sources */,
 				FAFE5762283A49B6004F151D /* ModelHelper.swift in Sources */,
 				FAFE5760283A3872004F151D /* SensorModel.swift in Sources */,
 				FADA7F112838C39500916152 /* metaringApp.swift in Sources */,
+				FAFE5769283A5799004F151D /* TabBarView.swift in Sources */,
+				FAFE5767283A54ED004F151D /* DashboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

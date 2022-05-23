@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct DashboardView: View {
+    @EnvironmentObject var dashboard: DashboardViewModel
+    
     var body: some View {
 //        NavigationView {
             GeometryReader(content: { geometry in
                 VStack(alignment: .leading, spacing: 0) {
                     // HEADER CONTENT
                     HStack {
-                        DashboardHeaderView()
+                        DashboardHeaderView(date: dashboard.date)
                         Spacer()
                     }
                     .padding()
