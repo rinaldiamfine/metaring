@@ -27,16 +27,16 @@ struct DashboardView: View {
                         VStack {
                             HStack {
                                 DashboardButtonView(
-                                    value: "0.5",
-                                    unit: "Mg/L",
+                                    value: String(dashboard.metalContentValue),
+                                    unit: dashboard.metalContentType,
                                     name: "Metal Content",
                                     nameIcon: MetaringAssets.metalContentIcon,
                                     backgroundIcon: MetaringAssets.metalContentBackground,
                                     nameColor: MetaringAssets.metalContent
                                 )
                                 DashboardButtonView(
-                                    value: "7",
-                                    unit: "pH",
+                                    value: String(dashboard.waterPHValue),
+                                    unit: dashboard.waterPHType,
                                     name: "Water pH",
                                     nameIcon: MetaringAssets.waterPHIcon,
                                     backgroundIcon: MetaringAssets.WaterPHBackground,
@@ -45,16 +45,16 @@ struct DashboardView: View {
                             }
                             HStack {
                                 DashboardButtonView(
-                                    value: "0.5",
-                                    unit: "NTU",
+                                    value: String(dashboard.waterTurbidityValue),
+                                    unit: dashboard.waterTurbidityType,
                                     name: "Water Turbidity",
                                     nameIcon: MetaringAssets.waterTurbidityIcon,
                                     backgroundIcon: MetaringAssets.WaterTurbidityBackground,
                                     nameColor: MetaringAssets.WaterTurbidity
                                 )
                                 DashboardButtonView(
-                                    value: "0.5",
-                                    unit: "m3/s",
+                                    value: String(dashboard.waterDebitValue),
+                                    unit: dashboard.waterDebitType,
                                     name: "Water Debit",
                                     nameIcon: MetaringAssets.waterDebitIcon,
                                     backgroundIcon: MetaringAssets.WaterDebitBackground,

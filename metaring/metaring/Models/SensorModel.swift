@@ -12,6 +12,17 @@ enum SensorType: String {
     case metal_content, water_ph, water_turbidity, water_debit
 }
 
+struct RequestSensorModel {
+    var status: Bool = false
+    var con: Dictionary = Dictionary<String, Any>()
+    var ct: String = ""
+    var lt: String = ""
+    var pi: String = ""
+    var ri: String = ""
+    var st: Int = 0
+    var ty: Int = 0
+}
+
 struct SensorModel {
     let sensor: Sensor
     var url: String {
@@ -20,18 +31,17 @@ struct SensorModel {
     var requestId: String {
         return sensor.requestId ?? ""
     }
-    var sensorType: String {
-        //metal_content
-        //water_ph
-        //water_turbidity
-        //water_debit
-        return sensor.sensorType ?? ""
+    var metalContent: Float {
+        return sensor.metal_content
     }
-    var unit: String {
-        return sensor.unit ?? ""
+    var waterPH: Float {
+        return sensor.water_ph
     }
-    var value: Float {
-        return sensor.value
+    var waterTurbidity: Float {
+        return sensor.water_turbidity
+    }
+    var waterDebit: Float {
+        return sensor.water_debit
     }
     var createTime: Date {
         return sensor.createTime ?? Date()

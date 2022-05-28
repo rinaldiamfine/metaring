@@ -13,13 +13,14 @@ struct HistoryView: View {
     var body: some View {
         VStack {
             HStack {
-                Picker("What is your favorite color?", selection: $favoriteColor) {
+                Picker("Filter", selection: $favoriteColor) {
                     Text("Day").tag(0)
                     Text("Week").tag(1)
                     Text("Month").tag(2)
                     Text("Year").tag(2)
                 }.pickerStyle(.segmented)
             }.padding()
+            Spacer()
         }
     }
 }
