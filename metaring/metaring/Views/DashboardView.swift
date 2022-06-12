@@ -14,7 +14,7 @@ struct DashboardView: View {
     
     func fetchOrders() {
         self.isRefreshing = true
-        dashboard.getLastData()
+        dashboard.getLastDataSensor()
         self.isRefreshing = false
     }
     

@@ -80,7 +80,7 @@ struct AntaresSensorRequest {
             let stringData = String(data: data, encoding: .utf8)!
             var formatResult = setupFormatResult(stringData: stringData)
             var formatSensorResult = setupFormatSensorResult(sensorData: formatResult["con"]! as AnyObject)
-            requestSensor.con = formatSensorResult as! [String : Any] 
+            requestSensor.con = formatSensorResult as! [String : Any]
             requestSensor.ct = formatResult["ct"] as! String
             requestSensor.lt = formatResult["lt"] as! String
             requestSensor.pi = formatResult["pi"] as! String

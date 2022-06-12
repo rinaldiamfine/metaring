@@ -14,13 +14,13 @@ enum SensorType: String {
 
 struct RequestSensorModel {
     var status: Bool = false
-    var con: Dictionary = Dictionary<String, Any>()
-    var ct: String = ""
-    var lt: String = ""
-    var pi: String = ""
-    var ri: String = ""
-    var st: Int = 0
-    var ty: Int = 0
+    var con: Dictionary = Dictionary<String, Any>() // Content
+    var ct: String = "" // Created Time
+    var lt: String = "" // Modified Time
+    var pi: String = "" // Parent ID
+    var ri: String = "" // Resource ID
+    var st: Int = 0 //
+    var ty: Int = 0 // Type
 }
 
 struct SensorModel {
@@ -28,22 +28,25 @@ struct SensorModel {
     var url: String {
         return sensor.url ?? ""
     }
-    var requestId: String {
-        return sensor.requestId ?? ""
+    var resourceId: String {
+        return sensor.resource_id ?? ""
     }
-    var metalContent: Float {
+    var metalContent: Double {
         return sensor.metal_content
     }
-    var waterPH: Float {
+    var waterPH: Double {
         return sensor.water_ph
     }
-    var waterTurbidity: Float {
+    var waterTurbidity: Double {
         return sensor.water_turbidity
     }
-    var waterDebit: Float {
+    var waterDebit: Double {
         return sensor.water_debit
     }
     var createTime: Date {
-        return sensor.createTime ?? Date()
+        return sensor.create_time ?? Date()
+    }
+    var time: String {
+        return sensor.time ?? ""
     }
 }

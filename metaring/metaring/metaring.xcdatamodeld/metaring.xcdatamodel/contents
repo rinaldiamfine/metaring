@@ -9,16 +9,17 @@
         <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Sensor" representedClassName="Sensor" syncable="YES" codeGenerationType="class">
-        <attribute name="createTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="metal_content" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="requestId" optional="YES" attributeType="String"/>
+        <attribute name="create_time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="metal_content" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="resource_id" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="String"/>
         <attribute name="url" optional="YES" attributeType="String"/>
-        <attribute name="water_debit" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="water_ph" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="water_turbidity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="water_debit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="water_ph" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="water_turbidity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <elements>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="119"/>
-        <element name="Sensor" positionX="-63" positionY="-9" width="128" height="134"/>
+        <element name="Sensor" positionX="-63" positionY="-9" width="128" height="149"/>
     </elements>
 </model>
