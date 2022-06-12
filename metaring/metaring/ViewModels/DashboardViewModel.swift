@@ -32,6 +32,9 @@ class DashboardViewModel: ObservableObject {
         if self.sensor.count != 0 {
             print("LETS GO FILL")
         }
+    }
+    
+    func getLastData() {
         var antaresRequest: RequestSensorModel = AntaresSensorRequest.init(semaphore: DispatchSemaphore(value: 0)).getLastData()
         print(antaresRequest, "ANTARES REQ")
     }

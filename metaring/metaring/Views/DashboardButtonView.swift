@@ -29,10 +29,12 @@ struct DashboardButtonView: View {
                 HStack(alignment: .top) {
                     Text(value)
                         .font(.title)
+                        .foregroundColor(MetaringAssets.fontColor)
                     Text(unit)
                         .font(.footnote)
                         .fontWeight(.light)
                         .padding(.vertical, 3)
+                        .foregroundColor(MetaringAssets.fontColor)
                 }
                 Text(name)
                     .foregroundColor(nameColor)

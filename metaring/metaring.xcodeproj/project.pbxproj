@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FA191D5228390786006AA2CF /* DashboardChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA191D5128390786006AA2CF /* DashboardChartView.swift */; };
+		FA3E77D32854B91F00520712 /* DetailButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E77D22854B91F00520712 /* DetailButtonView.swift */; };
+		FA3E77D52855BC7500520712 /* PullRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E77D42855BC7500520712 /* PullRefreshView.swift */; };
+		FAB8E758284379250063FBC9 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E757284379250063FBC9 /* DetailsView.swift */; };
 		FABAA675283904F600A36936 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = FABAA674283904F600A36936 /* Charts */; };
 		FADA7F112838C39500916152 /* metaringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F102838C39500916152 /* metaringApp.swift */; };
 		FADA7F132838C39500916152 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7F122838C39500916152 /* ContentView.swift */; };
@@ -51,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		FA191D5128390786006AA2CF /* DashboardChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardChartView.swift; sourceTree = "<group>"; };
+		FA3E77D22854B91F00520712 /* DetailButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButtonView.swift; sourceTree = "<group>"; };
+		FA3E77D42855BC7500520712 /* PullRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRefreshView.swift; sourceTree = "<group>"; };
+		FAB8E757284379250063FBC9 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		FADA7F0D2838C39500916152 /* metaring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metaring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA7F102838C39500916152 /* metaringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metaringApp.swift; sourceTree = "<group>"; };
 		FADA7F122838C39500916152 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -175,6 +181,9 @@
 				FADA7F922838FD9D00916152 /* MultiLineChartView.swift */,
 				FAFE5768283A5799004F151D /* TabBarView.swift */,
 				FAFE576A283A57FC004F151D /* HistoryView.swift */,
+				FAB8E757284379250063FBC9 /* DetailsView.swift */,
+				FA3E77D22854B91F00520712 /* DetailButtonView.swift */,
+				FA3E77D42855BC7500520712 /* PullRefreshView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,12 +423,15 @@
 				FA191D5228390786006AA2CF /* DashboardChartView.swift in Sources */,
 				FAFE576D283A6B8A004F151D /* SensorRequestHelper.swift in Sources */,
 				FADA7F932838FD9D00916152 /* MultiLineChartView.swift in Sources */,
+				FA3E77D32854B91F00520712 /* DetailButtonView.swift in Sources */,
 				FADA7F1A2838C39A00916152 /* Persistence.swift in Sources */,
+				FA3E77D52855BC7500520712 /* PullRefreshView.swift in Sources */,
 				FADA7F812838D9D000916152 /* AssetHelper.swift in Sources */,
 				FADA7F7C2838D81400916152 /* DashboardView.swift in Sources */,
 				FADA7F7E2838D88500916152 /* DashboardButtonView.swift in Sources */,
 				FADA7F132838C39500916152 /* ContentView.swift in Sources */,
 				FAFE576B283A57FC004F151D /* HistoryView.swift in Sources */,
+				FAB8E758284379250063FBC9 /* DetailsView.swift in Sources */,
 				FAFE5764283A4C90004F151D /* SensorHelper.swift in Sources */,
 				FAFE5762283A49B6004F151D /* ModelHelper.swift in Sources */,
 				FAFE5760283A3872004F151D /* SensorModel.swift in Sources */,

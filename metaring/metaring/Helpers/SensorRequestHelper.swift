@@ -12,15 +12,21 @@ import FoundationNetworking
 
 struct AntaresSensorRequest {
     var semaphore = DispatchSemaphore (value: 0)
+    
     var domainUrl = "https://platform.antares.id"
     var port = "8443"
     var cseId = "antares-cse"
     var cseName = "antares-id"
-    var applicationName = "SmartIdea"
-    var deviceName = "SensorTest"
+//    var applicationName = "SmartIdea"
+    var applicationName = "monitoring-waduk"
+//    var deviceName = "SensorTest"
+    var deviceName = "esp32"
     
-    var accessId = "6cd5e5cc78bbed06"
-    var accessPassword = "faefeda74389bcb0"
+//    var accessId = "6cd5e5cc78bbed06"
+//    var accessPassword = "faefeda74389bcb0"
+    var accessId = "a25252e8dfd62257"
+    var accessPassword = "4f90f1dd483f1748"
+    
     func setupGetRequest() {
         
     }
@@ -44,7 +50,6 @@ struct AntaresSensorRequest {
     func setupFormatSensorResult(sensorData: AnyObject) -> NSDictionary {
         var result = NSDictionary()
         var dictonary: NSDictionary?
-//        var stringSensorData = String(sensorData)
         if let dataJson = sensorData.data(using: String.Encoding.utf8.rawValue) {
             do {
                 dictonary = try JSONSerialization.jsonObject(with: dataJson, options: [.allowFragments]) as? [String:AnyObject] as NSDictionary?
@@ -75,7 +80,7 @@ struct AntaresSensorRequest {
             let stringData = String(data: data, encoding: .utf8)!
             var formatResult = setupFormatResult(stringData: stringData)
             var formatSensorResult = setupFormatSensorResult(sensorData: formatResult["con"]! as AnyObject)
-            requestSensor.con = formatSensorResult as! [String : Any]
+            requestSensor.con = formatSensorResult as! [String : Any] 
             requestSensor.ct = formatResult["ct"] as! String
             requestSensor.lt = formatResult["lt"] as! String
             requestSensor.pi = formatResult["pi"] as! String
