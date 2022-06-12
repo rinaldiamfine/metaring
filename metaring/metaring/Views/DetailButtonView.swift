@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct DetailButtonView: View {
-    var value: String = "0.5"
-    var unit: String = "Mg/L"
+    @Binding var isActive: Bool
     var name: String = "Metal Content"
     
     var nameIcon: Image = MetaringAssets.metalContentIcon
@@ -36,15 +35,17 @@ struct DetailButtonView: View {
                 .font(.caption)
                 .multilineTextAlignment(.center)
             Spacer()
-            RoundedRectangle(cornerRadius: 10, style: .circular)
-                .frame(width: 20, height: 4, alignment: .center)
-                .foregroundColor(.blue)
+            if isActive {
+                RoundedRectangle(cornerRadius: 10, style: .circular)
+                    .frame(width: 20, height: 4, alignment: .center)
+                    .foregroundColor(.blue)
+            }
         }.padding(.horizontal)
     }
 }
 
-struct DetailButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailButtonView()
-    }
-}
+//struct DetailButtonView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailButtonView()
+//    }
+//}

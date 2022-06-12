@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct HistoryView: View {
-    @State private var favoriteColor = 0
+    @State private var filterBy = 0
     @EnvironmentObject var dashboard: DashboardViewModel
-//    @Binding var isOpened: Bool
+    
+    @Binding var metalContentActive: Bool
+    @Binding var waterPHActive: Bool
+    @Binding var waterTurbidityActive: Bool
+    @Binding var waterDebitActive: Bool
     
     var body: some View {
         GeometryReader(content: { geometry in
@@ -23,37 +27,56 @@ struct HistoryView: View {
                     
                     HStack {
                         DetailButtonView(
-                            value: String(dashboard.metalContentValue),
-                            unit: dashboard.metalContentType,
+                            isActive: $metalContentActive,
                             name: "Metal Content",
                             nameIcon: MetaringAssets.metalContentIcon,
                             backgroundIcon: MetaringAssets.metalContentBackground,
                             nameColor: MetaringAssets.metalContent
-                        )
+                        ).onTapGesture {
+                            self.metalContentActive = true
+                            self.waterPHActive = false
+                            self.waterTurbidityActive = false
+                            self.waterDebitActive = false
+                        }
+                        
                         DetailButtonView(
-                            value: String(dashboard.waterPHValue),
-                            unit: dashboard.waterPHType,
+                            isActive: $waterPHActive,
                             name: "Water pH",
                             nameIcon: MetaringAssets.waterPHIcon,
                             backgroundIcon: MetaringAssets.WaterPHBackground,
                             nameColor: MetaringAssets.WaterPH
-                        )
+                        ).onTapGesture {
+                            self.metalContentActive = false
+                            self.waterPHActive = true
+                            self.waterTurbidityActive = false
+                            self.waterDebitActive = false
+                        }
+                        
                         DetailButtonView(
-                            value: String(dashboard.waterTurbidityValue),
-                            unit: dashboard.waterTurbidityType,
+                            isActive: $waterTurbidityActive,
                             name: "Water Turbidity",
                             nameIcon: MetaringAssets.waterTurbidityIcon,
                             backgroundIcon: MetaringAssets.WaterTurbidityBackground,
                             nameColor: MetaringAssets.WaterTurbidity
-                        )
+                        ).onTapGesture {
+                            self.metalContentActive = false
+                            self.waterPHActive = false
+                            self.waterTurbidityActive = true
+                            self.waterDebitActive = false
+                        }
+                        
                         DetailButtonView(
-                            value: String(dashboard.waterDebitValue),
-                            unit: dashboard.waterDebitType,
+                            isActive: $waterDebitActive,
                             name: "Water Debit",
                             nameIcon: MetaringAssets.waterDebitIcon,
                             backgroundIcon: MetaringAssets.WaterDebitBackground,
                             nameColor: MetaringAssets.waterDebit
-                        )
+                        ).onTapGesture {
+                            self.metalContentActive = false
+                            self.waterPHActive = false
+                            self.waterTurbidityActive = false
+                            self.waterDebitActive = true
+                        }
                     }
                     
                     HStack {
@@ -62,7 +85,7 @@ struct HistoryView: View {
                     .background(Color.clear)
                     
                     HStack {
-                        Picker("Filter", selection: $favoriteColor) {
+                        Picker("Filter", selection: $filterBy) {
                             Text("Day").tag(0)
                             Text("Week").tag(1)
                             Text("Month").tag(2)
@@ -78,8 +101,8 @@ struct HistoryView: View {
     }
 }
 
-struct HistoryView_Previews: PreviewProvider {
-    static var previews: some View {
-        HistoryView()
-    }
-}
+//struct HistoryView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HistoryView()
+//    }
+//}

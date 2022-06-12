@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 
 struct DashboardChartView: View {
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    let labels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let entries1 = [
         ChartDataEntry(x: 1, y: 1),
         ChartDataEntry(x: 2, y: 2),
@@ -56,7 +56,7 @@ struct DashboardChartView: View {
                 entries2: entries2,
                 entries3: entries3,
                 entries4: entries4,
-                days: days)
+                labels: labels)
         }
     }
 }

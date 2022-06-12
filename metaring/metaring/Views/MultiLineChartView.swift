@@ -13,7 +13,7 @@ struct MultiLineChartView : UIViewRepresentable {
     var entries2 : [ChartDataEntry]
     var entries3 : [ChartDataEntry]
     var entries4 : [ChartDataEntry]
-    var days: [String]
+    var labels: [String]
 
     func makeUIView(context: Context) -> LineChartView {
         let chart = LineChartView()
@@ -36,11 +36,11 @@ struct MultiLineChartView : UIViewRepresentable {
 //        chart.drawBordersEnabled = true
         chart.drawMarkers = true
         chart.legend.form = .none
-        chart.xAxis.labelCount = days.count
+        chart.xAxis.labelCount = labels.count
         chart.xAxis.forceLabelsEnabled = true
         chart.xAxis.granularityEnabled = true
         chart.xAxis.granularity = 0
-        chart.xAxis.valueFormatter = CustomChartFormatter(days: days)
+        chart.xAxis.valueFormatter = CustomChartFormatter(labels: labels)
         chart.data = addData()
         return chart
     }
@@ -80,11 +80,11 @@ struct MultiLineChartView : UIViewRepresentable {
 }
 
 class CustomChartFormatter: NSObject, IAxisValueFormatter {
-    var days: [String]
-    init(days: [String]) {
-        self.days = days
+    var labels: [String]
+    init(labels: [String]) {
+        self.labels = labels
     }
     public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        return days[Int(value-1)]
+        return labels[Int(value-1)]
     }
 }

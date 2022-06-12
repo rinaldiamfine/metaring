@@ -11,17 +11,18 @@ import CoreData
 class DashboardViewModel: ObservableObject {
     @Published var sensor: [SensorModel] = []
     @Published var date: String = ""
+    @Published var detailSelected = 0
     
-    @Published var metalContentValue: Float = 0.0
+    @Published var metalContentValue: Double = 0.0
     @Published var metalContentType: String = "Mg/L"
     
-    @Published var waterPHValue: Float = 0.0
+    @Published var waterPHValue: Double = 0.0
     @Published var waterPHType: String = "pH"
     
-    @Published var waterTurbidityValue: Float = 0.0
+    @Published var waterTurbidityValue: Double = 0.0
     @Published var waterTurbidityType: String = "NTU"
     
-    @Published var waterDebitValue: Float = 0.0
+    @Published var waterDebitValue: Double = 0.0
     @Published var waterDebitType: String = "m3/s"
     
     @Published var requestSensor: [RequestSensorModel] = []

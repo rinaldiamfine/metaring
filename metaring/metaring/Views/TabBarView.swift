@@ -22,15 +22,15 @@ struct TabBarView: View {
             }.tag(1)
                 .environmentObject(dashboard)
             
-            HistoryView().tabItem {
-                if selectedTab == 2 {
-                    MetaringAssets.historyIconActive
-                } else {
-                    MetaringAssets.historyIcon
-                }
-                Text("History")
-            }.tag(2)
-                .environmentObject(dashboard)
+//            HistoryView().tabItem {
+//                if selectedTab == 2 {
+//                    MetaringAssets.historyIconActive
+//                } else {
+//                    MetaringAssets.historyIcon
+//                }
+//                Text("History")
+//            }.tag(2)
+//                .environmentObject(dashboard)
         }
     }
 }

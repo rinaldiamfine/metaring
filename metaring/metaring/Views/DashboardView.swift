@@ -12,6 +12,11 @@ struct DashboardView: View {
     @State var isDetailOpened: Bool = false
     @State var isRefreshing: Bool = false
     
+    @State var metalContentActive: Bool = false
+    @State var waterPHActive: Bool = false
+    @State var waterTurbidityActive: Bool = false
+    @State var waterDebitActive: Bool = false
+    
     func fetchOrders() {
         self.isRefreshing = true
         dashboard.getLastDataSensor()
@@ -39,7 +44,13 @@ struct DashboardView: View {
                         HStack {
                             VStack {
                                 HStack {
-                                    NavigationLink(destination: HistoryView().environmentObject(dashboard), isActive: $isDetailOpened) {
+                                    Button {
+                                        metalContentActive = true
+                                        waterPHActive = false
+                                        waterTurbidityActive = false
+                                        waterDebitActive = false
+                                        isDetailOpened = true
+                                    } label: {
                                         DashboardButtonView(
                                             value: String(dashboard.metalContentValue),
                                             unit: dashboard.metalContentType,
@@ -50,8 +61,13 @@ struct DashboardView: View {
                                         )
                                     }
                                     
-                                    
-                                    NavigationLink(destination: HistoryView().environmentObject(dashboard), isActive: $isDetailOpened) {
+                                    Button {
+                                        metalContentActive = false
+                                        waterPHActive = true
+                                        waterTurbidityActive = false
+                                        waterDebitActive = false
+                                        isDetailOpened = true
+                                    } label: {
                                         DashboardButtonView(
                                             value: String(dashboard.waterPHValue),
                                             unit: dashboard.waterPHType,
@@ -62,8 +78,15 @@ struct DashboardView: View {
                                         )
                                     }
                                 }
+                                
                                 HStack {
-                                    NavigationLink(destination: HistoryView().environmentObject(dashboard), isActive: $isDetailOpened) {
+                                    Button {
+                                        metalContentActive = false
+                                        waterPHActive = false
+                                        waterTurbidityActive = true
+                                        waterDebitActive = false
+                                        isDetailOpened = true
+                                    } label: {
                                         DashboardButtonView(
                                             value: String(dashboard.waterTurbidityValue),
                                             unit: dashboard.waterTurbidityType,
@@ -74,7 +97,13 @@ struct DashboardView: View {
                                         )
                                     }
                                     
-                                    NavigationLink(destination: HistoryView().environmentObject(dashboard), isActive: $isDetailOpened) {
+                                    Button {
+                                        metalContentActive = false
+                                        waterPHActive = false
+                                        waterTurbidityActive = false
+                                        waterDebitActive = true
+                                        isDetailOpened = true
+                                    } label: {
                                         DashboardButtonView(
                                             value: String(dashboard.waterDebitValue),
                                             unit: dashboard.waterDebitType,
@@ -106,7 +135,19 @@ struct DashboardView: View {
                     .background(MetaringAssets.mainBackgroundColor)
 //                    .navigationTitle("Dashboard")
                     .navigationBarTitleDisplayMode(.inline)
-                }.coordinateSpace(name: "pullToRefresh")
+                }
+                .background(
+                    NavigationLink(
+                        destination: HistoryView(
+                            metalContentActive: $metalContentActive,
+                            waterPHActive: $waterPHActive,
+                            waterTurbidityActive: $waterTurbidityActive,
+                            waterDebitActive: $waterDebitActive).environmentObject(dashboard),
+                        isActive: $isDetailOpened) {
+                            EmptyView()
+                    }
+                )
+                .coordinateSpace(name: "pullToRefresh")
             })
         }
     }
