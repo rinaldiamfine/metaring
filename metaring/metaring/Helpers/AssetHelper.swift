@@ -42,3 +42,40 @@ struct MetaringGraphType {
     static var weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     static var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 }
+
+extension Date {
+    static func getDates(forLastNDays nDays: Int) -> [String] {
+        let cal = NSCalendar.current
+        var date = cal.startOfDay(for: Date())
+        date = cal.date(byAdding: Calendar.Component.day, value: 1, to: date)!
+        var arrDates = [String]()
+        for _ in 1 ... nDays {
+            date = cal.date(byAdding: Calendar.Component.day, value: -1, to: date)!
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let dateString = dateFormatter.string(from: date)
+            arrDates.append(dateString)
+        }
+        return arrDates.reversed()
+    }
+    
+    static func getDayNames(dateString: String) -> String {
+        var dayName = ""
+        let dateString = "2018-12-24"
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        guard let date = formatter.date(from: dateString) else {
+            return ""
+        }
+
+        formatter.dateFormat = "yyyy"
+        let year = formatter.string(from: date)
+        formatter.dateFormat = "MM"
+        let month = formatter.string(from: date)
+        formatter.dateFormat = "dd"
+        let day = formatter.string(from: date)
+        print(year, month, day) // 2018 12 24
+        
+        return dayName
+    }
+}

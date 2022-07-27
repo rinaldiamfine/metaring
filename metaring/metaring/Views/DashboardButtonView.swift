@@ -28,7 +28,7 @@ struct DashboardButtonView: View {
             VStack(alignment: .leading, spacing: 5) {
                 HStack(alignment: .top) {
                     Text(value)
-                        .font(.title)
+                        .font(.title3)
                         .foregroundColor(MetaringAssets.fontColor)
                     Text(unit)
                         .font(.footnote)

@@ -28,4 +28,22 @@ extension MetaringCoreDataManager {
             return nil
         }
     }
+    
+    func groupByDay() -> [SensorModel] {
+        let request: NSFetchRequest<Sensor> = Sensor.fetchRequest()
+        do {
+            var res = try viewContext.fetch(request).map(SensorModel.init).sorted { $0.createTime < $1.createTime }
+            return res
+        } catch {
+            return []
+        }
+        
+//        func group(_ result : FetchedResults<Songs>)-> [[Songs]] {
+
+//            var x = Dictionary(grouping: result) { $0.section! }
+//                .sorted(by: {$0.key < $1.key})
+//                .map {$0.value}
+//            print(x, "XXX")
+//        }
+    }
 }

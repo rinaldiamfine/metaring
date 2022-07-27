@@ -23,6 +23,15 @@ struct DashboardView: View {
         self.isRefreshing = false
     }
     
+    func formatData(data: Double) -> String {
+        let setData = Double(round(10 * data) / 10)
+        if setData == Double(data) {
+            return String(Int(data))
+        } else {
+            return String(setData)
+        }
+    }
+    
     var body: some View {
         NavigationView {
             GeometryReader(content: { geometry in
@@ -52,7 +61,7 @@ struct DashboardView: View {
                                         isDetailOpened = true
                                     } label: {
                                         DashboardButtonView(
-                                            value: String(dashboard.metalContentValue),
+                                            value: formatData(data: dashboard.metalContentValue),
                                             unit: dashboard.metalContentType,
                                             name: "Metal Content",
                                             nameIcon: MetaringAssets.metalContentIcon,
@@ -69,7 +78,7 @@ struct DashboardView: View {
                                         isDetailOpened = true
                                     } label: {
                                         DashboardButtonView(
-                                            value: String(dashboard.waterPHValue),
+                                            value: formatData(data: dashboard.waterPHValue),
                                             unit: dashboard.waterPHType,
                                             name: "Water pH",
                                             nameIcon: MetaringAssets.waterPHIcon,
@@ -88,7 +97,7 @@ struct DashboardView: View {
                                         isDetailOpened = true
                                     } label: {
                                         DashboardButtonView(
-                                            value: String(dashboard.waterTurbidityValue),
+                                            value: formatData(data: dashboard.waterTurbidityValue),
                                             unit: dashboard.waterTurbidityType,
                                             name: "Water Turbidity",
                                             nameIcon: MetaringAssets.waterTurbidityIcon,
@@ -105,7 +114,7 @@ struct DashboardView: View {
                                         isDetailOpened = true
                                     } label: {
                                         DashboardButtonView(
-                                            value: String(dashboard.waterDebitValue),
+                                            value: formatData(data: dashboard.waterDebitValue),
                                             unit: dashboard.waterDebitType,
                                             name: "Water Debit",
                                             nameIcon: MetaringAssets.waterDebitIcon,
@@ -125,7 +134,7 @@ struct DashboardView: View {
                         .background(Color.clear)
                         // BUTTON CONTENT
                         HStack {
-                            DashboardChartView()
+                            DashboardChartView().environmentObject(dashboard)
                                 .frame(height: 370)
                         }
                         .padding(5)
